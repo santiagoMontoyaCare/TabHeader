@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 80%;
+}
+
+.tab {
+    background-color: #f1f1f1;
+    border: none;
+    overflow: hidden;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    height: calc(100vh - 140px);
+    padding: 10px 20px;
+}
+
+
+.tablinks {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    padding: 18px 0;
+    transition: 1s;
+    width: 25%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.tab .tablinks:hover {
+    background-color: #ccc;
+}
+
+#Home{
+    background-color: #f44336;
+}
+
+#News{
+    background-color: #4CAF50;
+}
+
+#Contact{
+    background-color: #2196F3;
+}
+
+#About{
+    background-color: #ff5722;
+}

@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button.tablink {
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    padding: 20px 0px;
+    width: 25%;
+}
+
+div.content {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 50px 0;
+    width: 95%;
+}
+
+div.tabheader{
+    border: none;
+    color: white;
+    display: none;
+    height: 300px;
+    padding: 70px 50px;
+    text-align: center;
+}
+
+div.tabheader h1{
+    font-weight: 100;
+}
+
+div.tab button.tablink:hover {
+    background-color: #ddd;
+}
+
+#London{
+    background-color: #f44336;
+}
+
+#Paris{
+    background-color: #4CAF50;
+}
+
+#Tokyo{
+    background-color: #2196F3;
+}
+
+#Oslo{
+    background-color: #ff5722;
+}

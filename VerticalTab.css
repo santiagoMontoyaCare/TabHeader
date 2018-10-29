@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 50px 0;
+    width: 70%;
+}
+
+div.tab {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    float: left;
+    height: 300px;
+    width: 35%;
+}
+
+div.tabcontent{
+    animation: fadeEffect 1s;
+    border: 1px solid #ccc;
+    border-left: none;
+    float: right;
+    height: 300px;
+    padding: 0 15px;
+    width: 65%;
+    -webkit-animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+button.tablinks {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: 100;
+    outline: none;
+    padding: 22px 16px;
+    text-align: left;
+    transform: 1s;
+    width: 100%;
+    -webkit-transform: 1s;
+    -moz-transform: 1s;
+    -ms-transform: 1s;
+    -o-transform: 1s;
+}
+
+div.tab button.active {
+    background-color: #ccc;
+}
+
+div.tab button.tablinks:hover{
+    background-color: #ddd;
+}
